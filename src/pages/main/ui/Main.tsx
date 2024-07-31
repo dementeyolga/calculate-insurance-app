@@ -1,3 +1,9 @@
-export function Main() {
-  return <>Hello</>;
-}
+import { Header } from '@widgets/header';
+
+export const Main = () => {
+  return (
+    <>
+      <Header />
+    </>
+  );
+};
