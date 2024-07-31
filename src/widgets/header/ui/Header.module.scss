@@ -1,0 +1,24 @@
+@use './../../../app/styles/variables' as *;
+
+.header {
+  background-color: $secondary-backround;
+  border: 2px solid $header-border-color;
+
+  &__wrapper {
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

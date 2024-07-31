@@ -1,4 +1,6 @@
-@use './_fonts' as *;
+@use './fonts' as *;
+@use './variables' as *;
+@use './headings' as *;
 
 :root {
   font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -11,15 +13,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
+  display: flex;
+  align-items: center;
+  color: inherit;
   font-weight: 500;
   text-decoration: inherit;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: $text-color;
+  background-color: $main-backround;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1144px;
+  padding: 0 20px;
 }

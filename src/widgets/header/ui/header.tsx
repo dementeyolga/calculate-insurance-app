@@ -1,3 +1,34 @@
-export const Header = () => {
-  return <div>header</div>;
+import { FC } from 'react';
+import { NavLink } from '@/shared/ui/nav-link';
+import { Logo } from '@/shared/ui/logo';
+import s from './Header.module.scss';
+import compareImg from '@images/compare-icon.svg';
+import accountImg from '@images/account-icon.svg';
+import clsx from 'clsx';
+
+export const Header: FC = () => {
+  return (
+    <header className={s.header}>
+      <div className={clsx(s.header__wrapper, 'wrapper')}>
+        <nav className={s.nav}>
+          <Logo />
+          <NavLink href="#calculator">Онлайн-калькулятор</NavLink>
+          <NavLink href="#insurance-companies">Страховые компании</NavLink>
+          <NavLink href="#insurance-case">Страховой случай</NavLink>
+          <NavLink href="#faq">FaQ</NavLink>
+          <NavLink href="#about">О компании</NavLink>
+          <NavLink href="#contact">Контакты</NavLink>
+        </nav>
+        <div className={s.nav}>
+          <a>
+            <img src={compareImg} alt="сравнить предложения" />
+          </a>
+          <a href="" className={s.link}>
+            <img src={accountImg} alt="личный кабинет" />
+            <NavLink href="">Мой кабинет</NavLink>
+          </a>
+        </div>
+      </div>
+    </header>
+  );
 };

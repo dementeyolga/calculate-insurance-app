@@ -29,6 +29,7 @@
       "@/*": ["src/*"],
       "@shared/*": ["src/shared/*"],
       "@widgets/*": ["src/widgets/*"],
+      "@images/*": ["src/shared/assets/images/*"],
       "public/*": ["public/*"]
     }
   },
