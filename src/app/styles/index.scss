@@ -1,6 +1,6 @@
 @use './fonts' as *;
 @use './variables' as *;
-@use './headings' as *;
+@use './text' as *;
 
 :root {
   font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,6 +15,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 a {
@@ -31,6 +32,15 @@ body {
   min-height: 100vh;
   color: $text-color;
   background-color: $main-backround;
+}
+
+p {
+  margin: 6px 0 0;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 .wrapper {

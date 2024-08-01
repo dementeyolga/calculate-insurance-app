@@ -2,7 +2,7 @@
 
 .header {
   background-color: $secondary-backround;
-  border: 2px solid $header-border-color;
+  border-bottom: 2px solid $header-border-color;
 
   &__wrapper {
     height: 69px;
