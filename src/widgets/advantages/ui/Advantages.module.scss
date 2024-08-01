@@ -1,0 +1,48 @@
+@use './../../../app/styles/variables' as *;
+
+div.container {
+  margin-bottom: 100px;
+}
+
+.heading {
+  margin-bottom: 56px;
+}
+
+.grid {
+  height: 406px;
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    'first first second'
+    'first first third';
+}
+
+.first {
+  grid-area: first;
+  background-image: url('./.././../../shared/assets/images/casco-benefit.png');
+  background-size: cover;
+}
+
+.second {
+  grid-area: second;
+  background-image: url('./.././../../shared/assets/images/casco-protect.png');
+  background-size: cover;
+
+  p {
+    color: $heading-color;
+  }
+}
+
+.third {
+  grid-area: third;
+  background-image: url('./.././../../shared/assets/images/casco-warn.png');
+  background-size: cover;
+
+  p {
+    color: $header-border-color;
+  }
+
+  h3 {
+    color: $text-contrast-color;
+  }
+}

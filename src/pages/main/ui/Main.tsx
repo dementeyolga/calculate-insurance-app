@@ -1,6 +1,7 @@
 import { Header } from '@widgets/header';
 import { Promo } from '@widgets/promo';
 import { Calculator } from '@widgets/calculator';
+import { Advantages } from '@/widgets/advantages/ui/Advantages';
 
 export const Main = () => {
   return (
@@ -8,6 +9,7 @@ export const Main = () => {
       <Header />
       <Promo />
       <Calculator />
+      <Advantages />
     </>
   );
 };
