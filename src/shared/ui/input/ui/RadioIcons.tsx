@@ -15,7 +15,7 @@ export const RadioIcons: FC<RadioProps> = ({ carsData, name }) => {
   return (
     <div className={s.container}>
       {carsData.map(({ img, carName }) => (
-        <label className={s.label}>
+        <label className={s.label} key={carName}>
           <input type="radio" name={name} value={carName} />
           <img src={img} alt={carName} />
         </label>

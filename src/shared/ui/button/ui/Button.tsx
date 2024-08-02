@@ -7,6 +7,7 @@ interface ButtonProps {
   className?: string;
   primary?: true;
   children: string;
+  onClick?: () => void;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -14,11 +15,13 @@ export const Button: FC<ButtonProps> = ({
   type,
   primary,
   className,
+  onClick,
 }) => {
   return (
     <button
       type={type || 'button'}
       className={clsx(s.button, primary && s.primary, className)}
+      onClick={onClick}
     >
       {children}
     </button>

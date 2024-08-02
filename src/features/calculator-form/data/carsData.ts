@@ -81,7 +81,6 @@ export const productionYear = [
 
 const ages = Array(73).fill(0);
 export const driverAge = ages.map((_, index) => String(index + 18));
-console.log(driverAge);
 
 export const carDriveType = ['Полный', 'Передний', 'Задний'];
 

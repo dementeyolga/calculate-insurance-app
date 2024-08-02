@@ -20,13 +20,10 @@ export const Header: FC = () => {
           <NavLink href="#contact">Контакты</NavLink>
         </nav>
         <div className={s.nav}>
-          <a>
-            <img src={compareImg} alt="сравнить предложения" />
-          </a>
-          <a href="" className={s.link}>
-            <img src={accountImg} alt="личный кабинет" />
-            <NavLink href="">Мой кабинет</NavLink>
-          </a>
+          <NavLink img={compareImg} href=""></NavLink>
+          <NavLink img={accountImg} href="">
+            Мой кабинет
+          </NavLink>
         </div>
       </div>
     </header>

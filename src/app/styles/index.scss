@@ -6,7 +6,6 @@
   font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +21,6 @@ a {
   display: flex;
   align-items: center;
   color: inherit;
-  font-weight: 500;
   text-decoration: inherit;
 }
 
@@ -47,4 +45,9 @@ button {
   margin: 0 auto;
   max-width: 1144px;
   padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
 }

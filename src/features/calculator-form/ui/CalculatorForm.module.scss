@@ -31,3 +31,18 @@
   margin-right: 0;
   max-width: 344px;
 }
+
+.error {
+  font-size: 0.9rem;
+  color: $warning-color;
+  font-weight: 300;
+}
+
+.errorInput {
+  border-color: $warning-color;
+  color: $warning-color;
+
+  &::placeholder {
+    color: $warning-color;
+  }
+}
